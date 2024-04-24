@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GeeksforGeeks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+  header{
+    background-color: rgb(45, 157, 45);
+  }
+   header, #geeks, #header-lists, #lists{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+    #header-lists{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-right:50px;
+   }
+   #lists{
+    padding-left:100px;
+    font-size: 20px;
+   }
+   .hi{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+   }
+   .aboutme{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom:10% ;
+   }
+   #image{
+    float: left;
+    padding-left: 20%;
+    padding-top: 70px;
+   }
+   #paragraph{
+    width: 30%;
+    text-align: left;
+    padding-left: 47%;
+    padding-top: 30px;
+    color: white;
+   }
+   #project{
+    text-align:center;
+   }
+   .projects{
+    background-color: #d3c9bbf3;
+    padding-top: 2px;
+    padding-bottom: 5px;
+   }
+   .contact{
+    background-color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 60px;
+   }
+   .achievement{
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+   #achievements{
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
+   }
+   .Achievements{
+    color: green;
+    text-align: center;
+   }
+   #form{
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    margin: auto;
+    width: 40%;
+    padding-bottom: 70px;
+   }
+   .details{
+    float: right;
+    margin-right: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+   }
+   label{
+    padding-left: 20px;
+   }
+   #submit{
+          padding:5px;
+          width: 20%;
+          margin-left: 28%;
+          margin-top: 80px;
+          border: none;
+          border-top: 1px black solid;
+          font-weight: bold;
+          font-size: 15px;
+   }
+   .detail{
+    float: right;
+    margin-right: 200px;
+    padding-left: 5px;
+    padding-right: 40px;
+   }
+   .number{
+    float: right;
+    margin-right: 157px;
+    padding-left: 3px;
+    margin-right: 275px;
+   }
+   #contact{
+    text-align: center;
+   }
+   .body-lists{
+    margin-top:20px;
+   }
+   #footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+   }
+   #list-container{
+    background-color: rgb(40, 168, 40);
+    padding-bottom: 10px;
+    padding-top: 10px;
+   }
+   #footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: green;
+    padding-left:8%;
+    padding-right:6%;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+  </style>
+  <body>
+    <header>
+        <h2 id="geeks">GeeksforGeeks</h2>
+        <nav>
+          <ul id="header-lists">
+            <li id="lists">Home</li>
+            <li id="lists">About</li>
+            <li id="lists">Projects</li>
+            <li id="lists">Achievements</li>
+            <li id="lists">Contact</li>
+          </ul>
+        </nav>
+    </header>
+    <section class="hi">
+      <h2>Hi Geeks!</h2>
+    </section>
+
+    <main>
+      <section class="aboutme">
+        <h1>Ab<span style="text-decoration: underline;">out M</span>e</h1>
+        <div>
+          <img src="imagesss/painting.jpeg" id="image">
+          <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <br>
+            consequatur.
+            <br>
+            <br>rem consequatur iste quod saepe sint neque quis est, eaque blanditiis laudantium, 
+             laborum officiis ad! 
+            Dicta natus dolores fugit repudiandae explicabo?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Veritatis officiis nostrum fugiat nisi, repudiandae autem natus accusamus
+           quam minima.
+           <br> 
+           <br>dignissimos deleniti laudantium 
+          a deserunt non sint earum consequuntur hic magni!Dicta natus dolores fugit repudiandae explicabo?
+          Lorem ipsum, dolor sit amet
+          <br>
+          <br> consectetur adipisicing elit. 
+          Veritatis officiis nostrum fugiat nisi, repudiandae autem natus accusamus
+           quam minima.
+            <br>
+            <br>
+              Cheers
+            <br>
+              GeeksforGeeks
+        </p>
+        </div>
+      </section>
+    </main>
+    <section class="projects">
+      <h1 id="project">Projects</h1>
+      <div>
+        <ul>
+          <li class="body-lists">BMI Calculator  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Calculator  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Calender  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Chat Boot  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Contact Saver  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Tic Tac Toc  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Daily Quiz  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Guess The Number Game  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Todo App  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Travel Mangement System  <i class="fa-solid fa-spinner"></i></li>
+          <li class="body-lists">Employee Record Status  <i class="fa-solid fa-spinner"></i></li>
+          
+        </ul>
+      </div>
+    </section>
+    <section class="achievement">
+      <h1 class="Achievements">Achievements</h1>
+      <ul id="achievements">
+      <li>consectetur adipisicing elit. 
+        Veritatis officiis nostrum fugiat nisi, 
+        <br><ul><li>repudiandae autem.</li>
+          <li>Veritatis officiis nostrum fugiat nisi repudiandae autem.</li></ul></li>
+        <br>
+        <li>consectetur adipisicing elit. 
+          Veritatis officiis nostrum fugiat nisi, 
+          <br><ul><li>repudiandae autem.</li>
+          <li>Veritatis officiis nostrum fugiat nisi repudiandae autem.</li></ul></li>
+          <br>
+          <li>consectetur adipisicing elit. 
+            Veritatis officiis nostrum fugiat nisi, 
+            <br><ul><li>repudiandae autem.</li>
+              <li>Veritatis officiis nostrum fugiat nisi repudiandae autem.</li></ul></li>
+          </ul>
+    </section>
+    <section class="contact">
+      <h2 id="contact">Contact</h2>
+      <form id="form">
+        <label for="name">Name</label>
+        <input id="name" type="text" required class="details">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email" required class="details">
+        <br>
+        <br>
+        <label for="number">Number</label>
+        <input id="number" type="number" pattern="[0-9]{14,16}" class="number" required>
+        <br>
+        <br>
+        <label for="message">Message</label>
+        <textarea id="message" type="text" class="detail" rows="4" cols="25"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </section>
+    <footer>
+      <div id="list-container">
+        <ul id="footer-list">
+          <li>LinkedIn <i class="fa-solid fa-spinner"></i></li>
+          <li>HackerRank <i class="fa-solid fa-spinner"></i></li>
+          <li>Twitter <i class="fa-solid fa-spinner"></i></li>
+          <li>Instagram <i class="fa-solid fa-spinner"></i></li>
+          <li>Email <i class="fa-solid fa-spinner"></i></li>
+          <li>Website <i class="fa-solid fa-spinner"></i></li>
+          <li>GeeksforGeeks <i class="fa-solid fa-spinner"></i></li>
+          <li>GitHub <i class="fa-solid fa-spinner"></i></li>
+        </ul>
+      </div>
+      <div id="footer-container">
+        <h3> <i class="fa-solid fa-at"></i>Copyright 2050 by nobody. All rights reserved.</h3>
+        <h2><a href="" style="color: green;text-decoration: none;">TOP <i class="fa-solid fa-hand-point-up" style="color: #FFD43B;"></i></a></h2>
+      </div>
+    </footer>
+  </body>
+</html>
