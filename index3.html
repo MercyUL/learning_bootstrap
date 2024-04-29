@@ -1,64 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-        Survey Form
-    </title>
-  </head>
-  <style>
-        .background{
-          background-color: rgb(62, 173, 90);
-        }
-        h2{
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: center;
-        }
-    
-       /* the inputs sections are not responsive with the various screen sizes, 
-          it comes out and doesn't adjust as you reduce the screen size */
-        .form{
-          background-color: white;
-          width: 40%;
-          margin: auto;
-          padding-left: 20px;
-          padding-top: 20px;
-          padding-bottom: 40px;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-      
-         /* the input box isn't responsive to the screen size when i reduce it... It is not adjusting to fit the width of the container*/
-        .input{
-           padding: 10px 65% 10px 5px;
-          margin-top: 8px; 
-        }
-    
-        #option{
-          padding: 10px 65% 10px 5px ;
-          border-bottom: 2px solid;
-        }
-        /* the comment box isn't responsive to the screen size when i reduce it... It is not adjusting to fit the width of the container*/
-        #comment{
-          padding: 10px 55% 10px 5px;
-          margin-top: 8px;
-        }
-    
-        .submit{
-          padding:5px;
-          width: 89%;
-          margin: auto;
-          background-color: rgb(62, 173, 90);
-          border: none;
-          border-top: 1px black solid;
-        }
-       *{
-        margin-top: 10px;
-       }
-      
-  </style>
-  <body class="background">
-      <h2>GeeksforGeeks Survey Form</h2>
-      <section class="form">
-      <form >
+
+<head>
+  <title>
+    Survey Form
+  </title>
+</head>
+<style>
+  .container {
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    min-height: 100vh;
+    /* Set the minimum height to viewport height */
+    background-color: rgb(62, 173, 90);
+    /* Set the background color */
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Set the font family */
+    text-align: center;
+    /* Center the text */
+    margin-bottom: 2vh;
+    /* Add some bottom margin (2% of viewport height) */
+  }
+
+  .form {
+    background-color: white;
+    /* Set the background color of the form */
+    width: 80vw;
+    /* Set the width of the form to 80% of viewport width */
+    max-width: 500px;
+    /* Set a maximum width of 500px to prevent it from becoming too wide */
+    padding: 3vw;
+    /* Add some padding (3% of viewport width) */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Set the font family */
+    border-radius: 5px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a subtle box shadow */
+  }
+
+  .input,
+  #option,
+  #comment {
+    width: 100%;
+    /* Make the input fields, select, and textarea full width */
+    padding: 2vw;
+    /* Add some padding (2% of viewport width) */
+    margin-top: 1vh;
+    /* Add some top margin (1% of viewport height) */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    font-size: 3vw;
+    /* Set the font size (3% of viewport width) */
+  }
+
+  #option {
+    border-bottom: 2px solid;
+    /* Add a bottom border to the select dropdown */
+  }
+
+  .submit {
+    padding: 2vw;
+    /* Add some padding (2% of viewport width) */
+    width: 100%;
+    /* Make the submit button full width */
+    background-color: rgb(62, 173, 90);
+    /* Set the background color */
+    color: white;
+    /* Set the text color */
+    border: none;
+    /* Remove the border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    cursor: pointer;
+    /* Change the cursor to a pointer on hover */
+    font-size: 3vw;
+    /* Set the font size (3% of viewport width) */
+  }
+
+  @media (min-width: 768px) {
+
+    /* Styles for screens larger than or equal to 768px (tablets and desktops) */
+    .form {
+      width: 40vw;
+      /* Set the width of the form to 40% of viewport width */
+      padding: 20px;
+      /* Add fixed padding of 20px */
+    }
+
+    .input,
+    #option,
+    #comment {
+      padding: 10px;
+      /* Add fixed padding of 10px */
+      font-size: 16px;
+      /* Set a fixed font size of 16px */
+    }
+
+    .submit {
+      padding: 10px;
+      /* Add fixed padding of 10px */
+      font-size: 16px;
+      /* Set a fixed font size of 16px */
+    }
+  }
+</style>
+
+<body class="background">
+  <div class="container">
+    <h2>GeeksforGeeks Survey Form</h2>
+    <section class="form">
+      <form>
         <label for="name">Name</label>
         <br>
         <input type="text" id="name" placeholder="Enter your name" class="input">
@@ -76,63 +141,65 @@
         <br>
         <label for="option">Which option best describes you?</label>
         <br>
-       <select id="option">
-        <option value="student" >Student</option>
-       </select>
-       <br>
-       <br>
-       <label for="select">Would you recommend GeeksforGeeks to a friend?</label>
-       <br> 
-       <input type="radio" id="Yes" value="Yes" name="select">
-       <label for="Yes">Yes</label>
-       <br> 
-       <input type="radio" id="No" value="No" name="select">
-       <label for="No">No</label>
-       <br> 
-       <input type="radio" id="Maybe" value="Maybe" name="select">
-       <label for="Maybe">Maybe</label>
-       <br>
-       <br>
-       <label for="check">Languages and Frameworks known(Check all that apply)</label>
-       <br>
-       <input type="checkbox" id="c" value="c" name="check">
-       <label id="c">C</label>
-       <br>
-       <input type="checkbox" id="c++" value="c++" name="check">
-       <label id="c++">C++</label>
-       <br>
-       <input type="checkbox" id="c#" value="c#" name="check">
-       <label id="c#">C#</label>
-       <br>
-       <input type="checkbox" id="java" value="java" name="check">
-       <label id="java">Java</label>
-       <br>
-       <input type="checkbox" id="python" value="python" name="check">
-       <label id="python">Python</label>
-       <br>
-       <input type="checkbox" id="javascript" value="javascript" name="check">
-       <label id="javascript">JavaScript</label>
-       <br>
-       <input type="checkbox" id="react" value="react" name="check">
-       <label id="react">React</label>
-       <br>
-       <input type="checkbox" id="angular" value="angular" name="check">
-       <label id="angular">Angular</label>
-       <br>
-       <input type="checkbox" id="django" value="django" name="check">
-       <label id="django">Django</label>
-       <br>
-       <input type="checkbox" id="spring" value="spring" name="check">
-       <label id="spring">Spring</label>
-       <br>
-       <br>
-       <label for="comment">Any comments or suggestion</label>
-       <br>
-       <textarea id="comment" rows="3" cols="25" ></textarea>
-       <br>
-       <br>
-       <input type="submit" value="submit" class="submit">
+        <select id="option">
+          <option value="student">Student</option>
+        </select>
+        <br>
+        <br>
+        <label for="select">Would you recommend GeeksforGeeks to a friend?</label>
+        <br>
+        <input type="radio" id="Yes" value="Yes" name="select">
+        <label for="Yes">Yes</label>
+        <br>
+        <input type="radio" id="No" value="No" name="select">
+        <label for="No">No</label>
+        <br>
+        <input type="radio" id="Maybe" value="Maybe" name="select">
+        <label for="Maybe">Maybe</label>
+        <br>
+        <br>
+        <label for="check">Languages and Frameworks known(Check all that apply)</label>
+        <br>
+        <input type="checkbox" id="c" value="c" name="check">
+        <label id="c">C</label>
+        <br>
+        <input type="checkbox" id="c++" value="c++" name="check">
+        <label id="c++">C++</label>
+        <br>
+        <input type="checkbox" id="c#" value="c#" name="check">
+        <label id="c#">C#</label>
+        <br>
+        <input type="checkbox" id="java" value="java" name="check">
+        <label id="java">Java</label>
+        <br>
+        <input type="checkbox" id="python" value="python" name="check">
+        <label id="python">Python</label>
+        <br>
+        <input type="checkbox" id="javascript" value="javascript" name="check">
+        <label id="javascript">JavaScript</label>
+        <br>
+        <input type="checkbox" id="react" value="react" name="check">
+        <label id="react">React</label>
+        <br>
+        <input type="checkbox" id="angular" value="angular" name="check">
+        <label id="angular">Angular</label>
+        <br>
+        <input type="checkbox" id="django" value="django" name="check">
+        <label id="django">Django</label>
+        <br>
+        <input type="checkbox" id="spring" value="spring" name="check">
+        <label id="spring">Spring</label>
+        <br>
+        <br>
+        <label for="comment">Any comments or suggestion</label>
+        <br>
+        <textarea id="comment" rows="3" cols="25"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="submit" class="submit">
       </form>
     </section>
-  </body>
+  </div>
+</body>
+
 </html>
