@@ -5,23 +5,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <style>
-  header{
-    background-color: rgb(45, 157, 45);
-  }
-   header, #geeks, #header-lists, #lists{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 130px;
-    padding-right: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-   }
-    #header-lists{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin-right:50px;
-   }
    #lists{
     padding-left:100px;
     font-size: 20px;
@@ -149,17 +132,41 @@
     padding-right:6%;
     font-family: Arial, Helvetica, sans-serif;
    }
+   header{
+    background-color: rgb(27, 169, 27);
+    padding:1px;
+   }
+   nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+   }
+   nav ul{
+    list-style: none;
+    padding-right: 40px;
+    text-align: right;
+    width: 100%;
+   }
+   nav ul li{
+    display: inline-block;
+   
+   }
+   .geeks{
+    padding-left: 18%;
+   }
   </style>
   <body>
     <header>
-        <h2 id="geeks">GeeksforGeeks</h2>
         <nav>
-          <ul id="header-lists">
-            <li id="lists">Home</li>
-            <li id="lists">About</li>
-            <li id="lists">Projects</li>
-            <li id="lists">Achievements</li>
-            <li id="lists">Contact</li>
+           <h2 class="geeks">GeeksforGeeks</h2>
+           <ul>
+              <li id="lists">Home</li>
+              <li id="lists">About</li>
+              <li id="lists">Projects</li>
+              <li id="lists">Achievements</li>
+              <li id="lists">Contact</li>
           </ul>
         </nav>
     </header>

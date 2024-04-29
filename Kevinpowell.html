@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .header{
+          background-color: rgb(34, 34, 35);
+          width: 100%;
+          margin: auto;
+          line-height: 27px;
+          display: block;
+          margin-bottom: 0px;
+          
+        }
+       .header nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+       }
+        .logo{
+        width: 4%;
+        padding: 30px;
+       }
+       .header button{
+        margin-right: 5%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color:rgb(224, 107, 137);
+        border: none;
+        border-radius: 2px;
+        font-family:  Georgia, Times, 'Times New Roman', serif ;
+       }
+       .content{
+        background-color: rgb(253, 243, 228);
+        padding: 30px;
+        text-align: center;
+        padding-bottom: 40px;
+       }
+       .content h1{
+        color: white;
+        font-size: 60px;
+        font-weight: bolder;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       .challenge{
+        color: black;
+        background-color: rgb(37, 249, 69);
+        display: inline;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+       }
+       .section1{
+        background-color: rgb(34, 34, 35) ;
+        padding: 20px;
+       }
+       #firstparagraph , li, #secondparagraph{
+        color: white;
+        font-size: 18.9px;
+        line-height: 30.24px;
+        font-family: "cabin";
+        letter-spacing: normal;
+       }
+       #h1{
+          font-size: 36px;
+          color: white;
+          font-family: "Lato";
+          font-weight: 900;
+       }
+       strong{
+        font-family: "cabin";
+        font-size: 20px;
+       }
+       .section1 button{
+        padding: 17px;
+        background-color:rgb(224, 107, 137); 
+        border: none;
+        border-radius: 3px;
+        font-size: 15px;
+        letter-spacing: normal;
+        font-family: "cabin";
+       }
+       .section2 li{
+        color: black;
+        font-family: Arial;
+       }
+       .laptop{
+        width: 320px;
+        height: 25vh;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <img src="https://d31ezp3r8jwmks.cloudfront.net/z5y5yr8dr6i6iurmst9kpu3wwp7z" class="logo">
+          <button>Login</button>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+        <h1>CONQUERING <br>RESPONSIVE LAYOUT</h1>
+        <div class="challenge">21-DAY CHALLENGE</div>
+    </div>
+    <div class="section1">
+      <h1 id="h1">There is already so much to worry about with CSS.</h1>
+      <p id="firstparagraph"><strong>It can feel like a struggle just getting a layout to work properly</strong> and having to take so many different places into
+        <br> accounts.</p>
+        <ul>
+          <li>Getting the typography right</li>
+          <li>Getting things where they need to go on the page</li>
+          <li>Making the overall layout work</li>
+        </ul>
+        <p id="secondparagraph">On top of that, it all needs to be responsive</p>
+        <button>Get access for free</button>
+    </div>
+    <div class="section2">
+      <h1>You feel like there are too many moving parts when 
+        <br>it comes to making a layout responsive.</h1>
+        <p>Making a layout simply works is complicated enough. <strong>Everything just gets more complicated.</strong></p>
+        <ul>
+          <li>Mobile first or desktop first?</li>
+          <li>What units should I use?</li>
+          <li>How do I make sure that it's working on all devices?</li>
+        </ul>
+        <p>And then there is <strong>that whole problem of figuring out media queries!</strong></p>
+        <ul>
+          <li>How many media queries do I need?</li>
+          <li>How do I choose when to use a media query?</li>
+          <li>What sizes should then be?</li>
+          <li>Do I even need media queries anymore?</li>
+        </ul>
+      </div>
+      <section class="section3">
+        <div>
+          <img data-testid="media" src="https://d31ezp3r8jwmks.cloudfront.net/pc3sdTs7BQa3a99aAPCBpkvT" alt="" class="laptop">
+        </div>
+        <div>
+          <h2>Finding the right 
+            <br>approach</h2>
+            <p>It seems like there is too much to it, but <strong>there are <br>
+              ways to help simplify the process.</strong></p>
+            <br>
+            <br>
+            <p>In today's world we <i>need</i>to be able to make<br> responsive websites. It's an essential skill, but it's <br>
+              also one that can seem more complicated than it
+              <br> actually is.</p>
+        </div>
+      </section>
+      <section class="section4">
+        <h1>Start creating responsive layouts with confidence!</h1>
+        <p>Jump in on this 21-day challenge, put the time in, and <strong>you will walk out understanding how you can make a 
+          <br>responsive layouts.
+        </strong></p>
+        <button>Start now for free</button>
+      </section4>
+      <section class="section5">
+        <div><img data-testid="media" src="https://d31ezp3r8jwmks.cloudfront.net/qmPG1bAnjJiTvbNw9qwNw5hr" alt="" class="sc-jdHILj jNXKvo"></div>
+        <div>
+          <h1>Your instructor</h1>
+          <p>Hi, my name is Kevin. I've been teaching in the
+            <br> classroom for 6 years now, and also run a YouTube 
+            <br>channel with over 115,000 subscribers where I 
+            <br>focus on CSS.</p>
+            <br>
+            <p>I'm a self-described CSS evangelist. I love CSS, and 
+              <br><strong>I want you to fall in love with CSS too.</strong>
+            </p>
+            
+            <p>Yes, responsiveness can be hard if you take the 
+              <br>wrong approach to it. In this course we'll explore
+              <br> how to change how you're thinking about it, and 
+              <br><strong>together we'll learn to conquer responsive layouts.</strong></p>
+        </div>
+        <div><p></p></div>
+      </section>
+  </body>
+</html>
